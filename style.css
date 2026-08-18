@@ -4,16 +4,20 @@ html {
 
 body {
 	margin: 0;
-	font-family: 'Roboto Mono' !important;
+	font-family: 'Roboto Mono';
 	font-size: 24px;
-	--color-primary: hsl(260, 100%, 90%);            /* #dcf */
-	--color-primary-darker: hsl(260, 80%, 75%);      /* #ae8cf2 */
-	--color-secondary-1: hsl(290, 100%, 90%);        /* #f6ccff */
-	--color-secondary-1-darker: hsl(290, 80%, 75%);  /* #e18cf2 */
-	--color-secondary-2: hsl(230, 100%, 90%);        /* #ccd4ff */
-	--color-secondary-2-darker: hsl(230, 80%, 75%);  /* #8c9df2 */
-	--color-accent: hsl(80, 100%, 90%);              /* #efc */
-	--color-accent-darker: hsl(80, 80%, 75%);        /* #d0f28c */
+	--color-primary: hsl(260, 100%, 90%);					/* #ddccff */
+	--color-primary-darker: hsl(260, 80%, 75%);				/* #ae8cf2 */
+	--color-primary-even-darker: hsl(260, 80%, 60%);		/* #7e47eb */
+	--color-secondary-1: hsl(290, 100%, 90%);				/* #f6ccff */
+	--color-secondary-1-darker: hsl(290, 80%, 75%);			/* #e18cf2 */
+	--color-secondary-1-even-darker: hsl(290, 80%, 60%); 	/* #cf47eb */
+	--color-secondary-2: hsl(230, 100%, 90%);				/* #ccd4ff */
+	--color-secondary-2-darker: hsl(230, 80%, 75%);			/* #8c9df2 */
+	--color-secondary-2-even-darker: hsl(230, 80%, 60%);	/* #4763eb */
+	--color-accent: hsl(80, 100%, 90%);						/* #eeffcc */
+	--color-accent-darker: hsl(80, 80%, 75%);				/* #d0f28c */
+	--color-accent-even-darker: hsl(80, 80%, 60%);			/* #b4eb47 */
 	color: black;
 	background-color: var(--color-primary);
 	display: flex;
@@ -24,11 +28,17 @@ body {
 body.mtf {
 	--color-primary: var(--color-secondary-1);
 	--color-primary-darker: var(--color-secondary-1-darker);
+	--color-primary-even-darker: var(--color-secondary-1-even-darker);
 }
 
 body.ftm {
 	--color-primary: var(--color-secondary-2);
 	--color-primary-darker: var(--color-secondary-2-darker);
+	--color-primary-even-darker: var(--color-secondary-2-even-darker);
+}
+
+a:link, a:visited {
+	color: var(--color-primary-even-darker);
 }
 
 #sidebar {
@@ -37,14 +47,22 @@ body.ftm {
 	display: flex;
 	flex: none;
 	flex-direction: column;
-	background-color: var(--color-primary-darker);
+	background-image: url("sidebar_main.svg");
 	overflow: auto;
 	left: 0;
 	transition: left 0.2s ease-out;
 }
 
+body.mtf #sidebar {
+	background-image: url("sidebar_mtf.svg");
+}
+
+body.ftm #sidebar {
+	background-image: url("sidebar_ftm.svg");
+}
+
 .sidebar-category {
-	background-color: var(--color-primary-darker);
+	background-color: transparent;
 	border: none;
 	font-size: inherit;
 	text-align: left;
@@ -78,14 +96,14 @@ body.ftm {
 
 #sidebar a.current {
 	border-left: 4px solid;
-	margin-left: 6px; /*shouldn't it be 4px???*/
+	margin-left: 6px;
 	border-color: var(--color-accent);
 	padding-left: 8px;
 }
 
 #sidebar a, .sidebar-category {
-	display: inline-flex; /*tmp find a better way to do this?*/
-	width: stretch; /*tmp*/
+	display: inline-flex;
+	width: stretch;
 	margin: 4px 0;
 	padding: 4px;
 }
@@ -123,10 +141,15 @@ body.ftm {
 }
 
 @media (max-width: 960px) {
+	body {
+		font-size: 20px;
+	}
+
 	#sidebar {
 		position: absolute;
 		height: stretch;
-		left: -416px;
+		width: 320px;
+		left: -352px;
 	}
 
 	#sidebar.active {
@@ -138,7 +161,7 @@ body.ftm {
 	}
 
 	#sidebar.active ~ #menu-btn {
-		left: 416px;
+		left: 352px;
 	}
 
 	#text-container > h1 {
@@ -149,6 +172,15 @@ body.ftm {
 #text-container {
 	padding: 16px min(64px, 5%);
 	overflow: auto;
+}
+
+table, th, td {
+	border: solid 2px var(--color-primary-even-darker);
+	border-collapse: collapse;
+}
+
+td {
+	padding: 8px;
 }
 
 .important {

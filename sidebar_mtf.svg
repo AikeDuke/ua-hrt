@@ -1,0 +1,10 @@
+<svg id="visual" viewBox="0 0 448 1024" width="448" height="1024" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+    <path d="M351 0L339 256L327 512L360 768L351 1024L0 1024L0 768L0 512L0 256L0 0Z" fill="#f3c3fd"></path>
+    <path d="M274 0L290 256L293 512L319 768L274 1024L0 1024L0 768L0 512L0 256L0 0Z" fill="#f1bbfc"></path>
+    <path d="M236 0L235 256L238 512L232 768L236 1024L0 1024L0 768L0 512L0 256L0 0Z" fill="#eeb4fa"></path>
+    <path d="M221 0L239 256L188 512L241 768L221 1024L0 1024L0 768L0 512L0 256L0 0Z" fill="#ecacf9"></path>
+    <path d="M190 0L152 256L199 512L150 768L190 1024L0 1024L0 768L0 512L0 256L0 0Z" fill="#e9a4f7"></path>
+    <path d="M130 0L148 256L110 512L121 768L130 1024L0 1024L0 768L0 512L0 256L0 0Z" fill="#e69cf5"></path>
+    <path d="M74 0L101 256L95 512L74 768L74 1024L0 1024L0 768L0 512L0 256L0 0Z" fill="#e494f4"></path>
+    <path d="M55 0L42 256L61 512L59 768L55 1024L0 1024L0 768L0 512L0 256L0 0Z" fill="#e18cf2"></path>
+</svg>

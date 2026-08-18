@@ -1,10 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
-  <rect width="250" height="100" style="fill: rgb(91, 206, 250);"/>
-  <rect width="250" height="100" style="stroke-width: 1; fill: rgb(245, 169, 184);" y="100"/>
-  <rect width="250" height="100" style="stroke-width: 1; fill: rgb(255, 255, 255);" y="200"/>
-  <rect width="250" height="100" style="stroke-width: 1; fill: rgb(245, 169, 184);" y="300"/>
-  <rect width="250" height="100" style="fill: rgb(91, 206, 250); stroke-width: 1;" y="400"/>
-  <rect x="250" width="250" height="250" style="fill: rgb(0, 87, 183);"/>
-  <rect x="250" y="250" width="250" height="250" style="fill: rgb(255, 215, 0);"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <linearGradient id="color-0" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>blue</title>
+      <stop style="stop-color: rgb(91, 206, 250);"/>
+    </linearGradient>
+    <linearGradient id="color-1" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>pink</title>
+      <stop style="stop-color: rgb(245, 169, 184);"/>
+    </linearGradient>
+    <linearGradient id="color-2" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>white</title>
+      <stop style="stop-color: rgb(255, 255, 255);"/>
+    </linearGradient>
+  </defs>
+  <g style="transform-origin: 250px 250px;" transform="matrix(1.168431, 0.31308, -0.31308, 1.168431, -20.354756, 7.814604)">
+    <g>
+      <path d="M 142.504 89.972 C 181.898 89.972 215.829 113.118 231.163 146.416 L 53.845 146.416 C 69.179 113.118 103.11 89.972 142.504 89.972 C 142.504 89.972 142.504 89.972 142.504 89.972 Z" style="fill: url(&quot;#color-0&quot;);"/>
+      <path d="M 239.882 186.323 C 239.882 191.962 239.393 197.487 238.453 202.86 L 46.554 202.86 C 45.615 197.487 45.125 191.962 45.125 186.323 C 45.125 172.089 48.245 158.576 53.844 146.416 L 231.162 146.416 C 236.762 158.576 239.881 172.089 239.881 186.323 Z" style="paint-order: fill; fill: url(&quot;#color-1&quot;);"/>
+      <path d="M 250 259.304 L 78.924 259.304 C 62.228 245.051 50.475 225.283 46.555 202.86 L 238.454 202.86 C 236.924 211.615 234.199 219.965 230.452 227.74 C 237.957 232.646 244.571 238.801 250.001 245.909 Z" style="stroke-width: 1; fill: url(&quot;#color-2&quot;);"/>
+      <path d="M 250 259.304 L 250 315.748 L 112.05 315.748 C 109.988 308.719 108.882 301.28 108.882 293.584 C 108.882 288.025 109.459 282.601 110.556 277.369 C 98.832 273.342 88.127 267.161 78.924 259.304 Z" style="stroke-width: 1; fill: url(&quot;#color-1&quot;);"/>
+      <path d="M 250 315.748 L 250 341.259 C 235.743 359.923 213.317 372.013 188.059 372.192 L 186.926 372.192 C 151.455 371.942 121.569 348.199 112.051 315.748 Z" style="stroke-width: 1; fill: url(&quot;#color-0&quot;);"/>
+    </g>
+    <g style="" transform="matrix(-1, 0, 0, 1, 500.000984, 0)">
+      <path d="M 142.504 89.972 C 181.898 89.972 215.829 113.118 231.163 146.416 L 53.845 146.416 C 69.179 113.118 103.11 89.972 142.504 89.972 C 142.504 89.972 142.504 89.972 142.504 89.972 Z" style="fill: url(&quot;#color-0&quot;);"/>
+      <path d="M 239.882 186.323 C 239.882 191.962 239.393 197.487 238.453 202.86 L 46.554 202.86 C 45.615 197.487 45.125 191.962 45.125 186.323 C 45.125 172.089 48.245 158.576 53.844 146.416 L 231.162 146.416 C 236.762 158.576 239.881 172.089 239.881 186.323 Z" style="paint-order: fill; fill: url(&quot;#color-1&quot;);"/>
+      <path d="M 250 259.304 L 78.924 259.304 C 62.228 245.051 50.475 225.283 46.555 202.86 L 238.454 202.86 C 236.924 211.615 234.199 219.965 230.452 227.74 C 237.957 232.646 244.571 238.801 250.001 245.909 Z" style="stroke-width: 1; fill: url(&quot;#color-2&quot;);"/>
+      <path d="M 250 259.304 L 250 315.748 L 112.05 315.748 C 109.988 308.719 108.882 301.28 108.882 293.584 C 108.882 288.025 109.459 282.601 110.556 277.369 C 98.832 273.342 88.127 267.161 78.924 259.304 Z" style="stroke-width: 1; fill: url(&quot;#color-1&quot;);"/>
+      <path d="M 250 315.748 L 250 341.259 C 235.743 359.923 213.317 372.013 188.059 372.192 L 186.926 372.192 C 151.455 371.942 121.569 348.199 112.051 315.748 Z" style="stroke-width: 1; fill: url(&quot;#color-0&quot;);"/>
+    </g>
+    <ellipse style="fill: rgb(181, 255, 126);" cx="250" cy="250" rx="31.326" ry="171.634"/>
+  </g>
 </svg>
