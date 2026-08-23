@@ -8,7 +8,7 @@ else if (window.location.href.includes("ftm")) {
 fetch("sidebar.html")
 	.then(r => r.text())
 	.then(data => {
-		document.getElementById("sidebar").innerHTML = data;
+		document.body.insertAdjacentHTML("afterbegin", data);
 		var category_list = document.getElementsByClassName("sidebar-category");
 		for (i = 0; i < category_list.length; i++) {
 			category_list[i].addEventListener("click", function() {
@@ -31,3 +31,15 @@ fetch("sidebar.html")
 			}
 		}
 	});
+
+const container = document.getElementById("text-container");
+var lastScroll = 0;
+container.addEventListener("scroll", function() {
+	if (container.scrollTop > lastScroll+2) {
+		document.getElementById("menu-btn").style.top = "-64px";
+	}
+	else if (container.scrollTop < lastScroll-2) {
+		document.getElementById("menu-btn").style.top = "0";
+	}
+	lastScroll = container.scrollTop
+});
