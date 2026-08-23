@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg id="visual" viewBox="0 0 448 1024" width="448" height="1024" xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <path d="M 328 0 L 323 93 L 330 186 L 323 279 L 317 372 L 317 465 L 323 559 L 328 652 L 336 745 L 334 838 L 326 931 L 328 1024 L 0 1024 L 0 931 L 0 838 L 0 745 L 0 652 L 0 559 L 0 465 L 0 372 L 0 279 L 0 186 L 0 93 L 0 0 L 328 0 Z" style="fill: rgb(168, 180, 248);"/>
+  <path d="M 294 0 L 298 93 L 306 186 L 300 279 L 302 372 L 290 465 L 288 559 L 294 652 L 301 745 L 302 838 L 299 931 L 294 1024 L 0 1024 L 0 931 L 0 838 L 0 745 L 0 652 L 0 559 L 0 465 L 0 372 L 0 279 L 0 186 L 0 93 L 0 0 L 294 0 Z" fill="#8c9df2"/>
+</svg>

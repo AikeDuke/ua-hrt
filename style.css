@@ -41,6 +41,16 @@ a:link, a:visited {
 	color: var(--color-primary-even-darker);
 }
 
+#scroll-blocker {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: var(--color-primary);
+	opacity: 0;
+	transition: opacity 0.2s;
+	pointer-events: none;
+}
+
 #sidebar {
 	width: 384px;
 	padding: 16px;
@@ -145,11 +155,25 @@ body.ftm #sidebar {
 		font-size: 20px;
 	}
 
+	#scroll-blocker:has(+#sidebar.active) {
+		pointer-events: auto;
+		opacity: 0.5;
+	}
+
 	#sidebar {
 		position: absolute;
 		height: stretch;
 		width: 320px;
 		left: -352px;
+		background-image: url("sidebar_main_mobile.svg");
+	}
+
+	body.mtf #sidebar {
+		background-image: url("sidebar_mtf_mobile.svg");
+	}
+
+	body.ftm #sidebar {
+		background-image: url("sidebar_ftm_mobile.svg");
 	}
 
 	#sidebar.active {
