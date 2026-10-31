@@ -5,7 +5,7 @@ else if (window.location.href.includes("ftm")) {
 	document.getElementsByTagName("body")[0].classList.add("ftm");
 }
 
-fetch("sidebar.html")
+fetch("/sidebar/sidebar.html")
 	.then(r => r.text())
 	.then(data => {
 		document.body.insertAdjacentHTML("afterbegin", data);
