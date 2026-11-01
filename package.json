@@ -1,0 +1,21 @@
+{
+  "name": "ua-hrt",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build-ghpages": "npx @11ty/eleventy --pathprefix=/ua-hrt/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AikeDuke/ua-hrt.git"
+  },
+  "keywords": [],
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/AikeDuke/ua-hrt/issues"
+  },
+  "homepage": "https://github.com/AikeDuke/ua-hrt#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.7"
+  }
+}
