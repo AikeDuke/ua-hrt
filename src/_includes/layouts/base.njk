@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    {% include "templates/sidebar.html" %}
     <div id="text-container">
         <h1>{{ body_title | default(title) }}</h1>
         {{ content | safe }}
