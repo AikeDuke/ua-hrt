@@ -57,18 +57,18 @@ a:link, a:visited {
 	display: flex;
 	flex: none;
 	flex-direction: column;
-	background-image: url("sidebar_main.svg");
+	background-image: url("/sidebar_main.svg");
 	overflow: auto;
 	left: 0;
 	transition: left 0.2s ease-out;
 }
 
 body.mtf #sidebar {
-	background-image: url("sidebar_mtf.svg");
+	background-image: url("/sidebar_mtf.svg");
 }
 
 body.ftm #sidebar {
-	background-image: url("sidebar_ftm.svg");
+	background-image: url("/sidebar_ftm.svg");
 }
 
 .sidebar-category {
@@ -165,15 +165,15 @@ body.ftm #sidebar {
 		height: stretch;
 		width: 320px;
 		left: -352px;
-		background-image: url("sidebar_main_mobile.svg");
+		background-image: url("/sidebar_main_mobile.svg");
 	}
 
 	body.mtf #sidebar {
-		background-image: url("sidebar_mtf_mobile.svg");
+		background-image: url("/sidebar_mtf_mobile.svg");
 	}
 
 	body.ftm #sidebar {
-		background-image: url("sidebar_ftm_mobile.svg");
+		background-image: url("/sidebar_ftm_mobile.svg");
 	}
 
 	#sidebar.active {
