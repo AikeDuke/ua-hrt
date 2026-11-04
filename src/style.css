@@ -163,6 +163,7 @@ body.ftm #sidebar {
 	#sidebar {
 		position: absolute;
 		height: stretch;
+		height: -webkit-fill-available;
 		width: 320px;
 		left: -352px;
 		background-image: url("/sidebar_main_mobile.svg");
