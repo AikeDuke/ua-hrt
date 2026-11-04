@@ -1,2 +1,9 @@
+# Build output
 _site/
+
+# NodeJS package files and dependencies
 node_modules/
+
+# VSCode
+.vscode
+*.code-workspace
