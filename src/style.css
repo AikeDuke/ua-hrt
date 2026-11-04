@@ -41,6 +41,21 @@ a:link, a:visited {
 	color: var(--color-primary-even-darker);
 }
 
+#skip-link {
+    position: absolute;
+    top: -9999px;
+    z-index: -1;
+    background-color: var(--color-accent);
+    padding: .5rem .9rem;
+    font-family: monospace;
+	font-size: 0.75em;
+}
+
+#skip-link:focus {
+    top: 0;
+    z-index: 99;
+}
+
 #scroll-blocker {
 	position: absolute;
 	width: 100%;
