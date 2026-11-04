@@ -18,6 +18,8 @@ body {
 	--color-accent: hsl(80, 100%, 90%);						/* #eeffcc */
 	--color-accent-darker: hsl(80, 80%, 75%);				/* #d0f28c */
 	--color-accent-even-darker: hsl(80, 80%, 60%);			/* #b4eb47 */
+    --color-link: hsl(230, 80%, 50%);
+    --color-link-visited: hsl(270, 80%, 45%);
 	color: #1a1a1a;
 	background-color: var(--color-primary);
 	display: flex;
@@ -37,8 +39,12 @@ body.ftm {
 	--color-primary-even-darker: var(--color-secondary-2-even-darker);
 }
 
-a:link, a:visited {
-	color: var(--color-primary-even-darker);
+a:link {
+	color: var(--color-link);
+}
+
+a:visited {
+	color: var(--color-link-visited);
 }
 
 #skip-link {
