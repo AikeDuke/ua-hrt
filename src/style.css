@@ -4,7 +4,7 @@ html {
 
 body {
 	margin: 0;
-	font-family: 'Roboto Mono';
+	font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 	font-size: 24px;
 	--color-primary: hsl(260, 100%, 90%);					/* #ddccff */
 	--color-primary-darker: hsl(260, 80%, 75%);				/* #ae8cf2 */
@@ -18,7 +18,7 @@ body {
 	--color-accent: hsl(80, 100%, 90%);						/* #eeffcc */
 	--color-accent-darker: hsl(80, 80%, 75%);				/* #d0f28c */
 	--color-accent-even-darker: hsl(80, 80%, 60%);			/* #b4eb47 */
-	color: black;
+	color: #1a1a1a;
 	background-color: var(--color-primary);
 	display: flex;
 	flex-flow: row;
@@ -221,3 +221,4 @@ td {
 button {
 	font-family: inherit;
 }
+
