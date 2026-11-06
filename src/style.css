@@ -154,8 +154,11 @@ body.ftm #sidebar {
 	grid-template-rows: 1fr;
 }
 
-.sidebar-category-content > div {
+.sidebar-category-content > ul {
 	overflow: hidden;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 #menu-btn {
