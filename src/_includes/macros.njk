@@ -1,5 +1,5 @@
 {% macro _renderNavListItem(entry) -%}
-<li {% if entry.page.url == page.url %}class="my-active-class" {% endif %}>
+<li {% if entry.page.url == page.url %}aria-current="page"{% endif %}>
     <a href="{{ entry.page.url }}">{{ entry.data.title }}</a>
 </li>
 {%- endmacro %}
