@@ -1,0 +1,16 @@
+{% from "macros.njk" import renderSidebarCategory with context %}
+
+<div id="scroll-blocker"></div>
+<div id="sidebar">
+    <h3 style="margin-left: 4px;">Мапа сайту</h3>
+    <a href="/">Головна сторінка</a>
+
+    {# Категорії додавати сюди #}
+    {{ renderSidebarCategory("Медичні аспекти") }}
+    {{ renderSidebarCategory("Юридичні аспекти") }}
+    {{ renderSidebarCategory("Додаткова інформація") }}
+
+    <a href="/about/">Про нас</a>
+</div>
+
+<button type="button" id="menu-btn" onclick="document.getElementById('sidebar').classList.toggle('active')">☰</button>

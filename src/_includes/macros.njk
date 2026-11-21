@@ -1,0 +1,16 @@
+{% macro _renderNavListItem(entry) -%}
+<li {% if entry.page.url == page.url %}class="my-active-class" {% endif %}>
+    <a href="{{ entry.page.url }}">{{ entry.data.title }}</a>
+</li>
+{%- endmacro %}
+
+{% macro renderSidebarCategory(name) -%}
+<button class="sidebar-category">{{ name }}</button>
+    <div class="sidebar-category-content">
+        <ul>
+            {%- for entry in collections[name] %}
+            {{ _renderNavListItem(entry) }}
+            {%- endfor %}
+        </ul>
+    </div>
+{%- endmacro %}
