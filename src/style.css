@@ -73,14 +73,16 @@ a:visited {
 
 #sidebar {
 	width: 384px;
-	padding: 16px;
+	padding: 16px 0 16px 16px;
 	display: flex;
 	flex: none;
 	flex-direction: column;
 	background-image: url("/sidebar_main.svg");
 	overflow: auto;
 	left: 0;
-	transition: left 0.2s ease-out;
+	transition:
+        left 0.2s ease-out,
+        padding-left 0.2s ease-in-out;
 }
 
 body.mtf #sidebar {
@@ -91,22 +93,31 @@ body.ftm #sidebar {
 	background-image: url("/sidebar_ftm.svg");
 }
 
+.sidebar-title {
+	margin: 10px 0 10px 0;
+    font-size: 1.2em;
+}
+
 .sidebar-category {
 	background-color: transparent;
 	border: none;
 	font-size: inherit;
 	text-align: left;
 	cursor: pointer;
+    transition: padding-left 0.1s ease-in-out;
 }
 
 .sidebar-category:hover {
 	background-color: var(--color-primary);
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    padding-left: 0.6rem;
 }
 
 .sidebar-category::before {
 	content: "❯";
 	font-size: 20px;
-	margin-right: 4px;
+	margin-right: 6px;
 	transition: rotate 0.2s ease-out;
 }
 
@@ -118,10 +129,14 @@ body.ftm #sidebar {
 	text-decoration: none;
 	color: black;
 	cursor: pointer;
+    transition: padding-left 0.1s ease-in-out;
 }
 
 #sidebar a:hover {
 	background-color: var(--color-primary);
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    padding-left: 0.6rem;
 }
 
 #sidebar a.current {
@@ -129,11 +144,14 @@ body.ftm #sidebar {
 	margin-left: 6px;
 	border-color: var(--color-accent);
 	padding-left: 8px;
+    transition:
+        border-top-left-radius 0.1s ease-in-out,
+        border-bottom-left-radius 0.1s ease-in-out;
 }
 
 #sidebar a, .sidebar-category {
 	display: inline-flex;
-	width: stretch;
+	width: 100%;
 	margin: 4px 0;
 	padding: 4px;
 }
@@ -215,6 +233,20 @@ body.ftm #sidebar {
 	#text-container > h1 {
 		margin-top: 48px;
 	}
+}
+
+@media(prefers-reduced-motion: reduce) {
+    #sidebar, #sidebar a, #sidebar a.current, .sidebar-category, .sidebar-category::before, .sidebar-category-content {
+        transition: none;
+    }
+
+    .sidebar-category:hover, #sidebar a:hover {
+        padding-left: 4px;
+    }
+
+    #sidebar a.current:hover {
+        padding-left: 8px;
+    }
 }
 
 #text-container {
