@@ -1,0 +1,7 @@
+# Ignore artifacts:
+_site
+
+# Prettier replaces all underscores with asterisks,
+# which is something we don't want, soooo...
+# Ignore all markdown files for now:
+**/*.md
