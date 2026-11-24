@@ -10,7 +10,7 @@
 
 ```shell
 npm ci
-npx @11ty/eleventy --serve
+npm run dev
 ```
 У виводі програми буде написано, за якою адресою доступний вебсайт (скоріш за все http://localhost:8080/).
 

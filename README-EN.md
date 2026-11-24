@@ -10,7 +10,7 @@ You need to have [npm](https://nodejs.org/en/download) installed on your system.
 
 ```shell
 npm ci
-npx @11ty/eleventy --serve
+npx run dev
 ```
 The output will tell you where the website is served (most probably http://localhost:8080/).
 
