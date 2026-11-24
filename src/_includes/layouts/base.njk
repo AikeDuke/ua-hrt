@@ -16,12 +16,12 @@
 </head>
 
 <body>
-    <a id="skip-link" href="#text-container">Перейти до основного контенту</a>
+    <a id="skip-link" href="#main">Перейти до основного контенту</a>
     {% include "templates/sidebar.njk" %}
-    <div id="text-container">
+    <main id="main">
         <h1>{{ body_title | default(title) }}</h1>
         {{ content | safe }}
-    </div>
+    </main>
     <script src="/sidebar.js"></script>
 </body>
 

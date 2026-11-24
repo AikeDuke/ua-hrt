@@ -230,6 +230,10 @@ body.ftm #sidebar {
         background-image: url("/sidebar_ftm_mobile.svg");
     }
 
+    main > h1 {
+        margin-top: 48px;
+    }
+
     #sidebar.active {
         left: 0;
     }
@@ -240,10 +244,6 @@ body.ftm #sidebar {
 
     #sidebar.active ~ #menu-btn {
         left: 352px;
-    }
-
-    #text-container > h1 {
-        margin-top: 48px;
     }
 }
 
@@ -267,7 +267,7 @@ body.ftm #sidebar {
     }
 }
 
-#text-container {
+main {
     padding: 16px min(64px, 5%);
     overflow: auto;
 }

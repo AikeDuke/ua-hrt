@@ -30,7 +30,7 @@ for (i = 0; i < article_list.length; i++) {
     }
 }
 
-const container = document.getElementById("text-container");
+const container = document.getElementById("main");
 var lastScroll = 0;
 container.addEventListener("scroll", function () {
     if (container.scrollTop > lastScroll + 2) {
