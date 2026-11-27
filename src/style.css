@@ -171,13 +171,14 @@ body.ftm #sidebar {
 }
 
 .sidebar-category-content {
-    display: grid;
+    display: none;
     grid-template-rows: 0fr;
     transition: grid-template-rows 0.2s ease-out;
     margin-left: 22px;
 }
 
 .sidebar-category-content.active {
+    display: grid;
     grid-template-rows: 1fr;
 }
 

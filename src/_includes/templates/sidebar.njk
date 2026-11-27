@@ -1,7 +1,7 @@
 {% from "macros.njk" import renderSidebarCategory with context %}
 
 <div id="scroll-blocker"></div>
-<div id="sidebar">
+<nav id="sidebar" tabindex="-1">
     <h2 class="sidebar-title"><a href="/">{{ site.domain }}</a></h2>
 
     {# Категорії додавати сюди #}
@@ -10,6 +10,6 @@
     {{ renderSidebarCategory("Додаткова інформація") }}
 
     <a href="/about/">Про нас</a>
-</div>
+</nav>
 
 <button type="button" id="menu-btn" onclick="document.getElementById('sidebar').classList.toggle('active')">☰</button>
